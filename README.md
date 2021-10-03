@@ -1,3 +1,39 @@
+# LAB - Application State with Redux
+
+
+> pull req: 
+
+--- 
+
+- [PR]()
+
+> sandBox : 
+
+--- 
+
+- [sandBox-1]()
+
+
+> uml 
+
+- ![](storeFront.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
