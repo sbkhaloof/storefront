@@ -1,37 +1,24 @@
 # LAB - Application State with Redux
 
+# LAB: Redux - Combined Reducers
 
-> pull req: 
+> pull req:
 
---- 
+---
 
 - [PR](https://github.com/sbkhaloof/storefront/pull/1)
+- [PR]()
 
-> sandBox : 
+> sandBox :
 
---- 
+---
 
 - [sandBox-1](https://jurlr.csb.app/)
+- [sandBox-2]()
 
+> uml
 
-> uml 
-
-- ![](storeFront.PNG)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ ![](storeFront.PNG)
 
 
 # Getting Started with Create React App
@@ -104,4 +91,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # storefront
