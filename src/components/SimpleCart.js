@@ -10,7 +10,7 @@ import {deleteFromCart} from '../store/cart'
 
 function SimpleCart(props) {
     return (
-        <ul style={{marginLeft:'1400px'}}>
+        <ul style={{position:"absolute", right:"20px"}}>
             {props.cart.view && props.cart.cart.map((ele, index) => {
                 return (
                     <li key={index} >
