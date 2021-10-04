@@ -15,7 +15,7 @@ const Categories = (props) => {
             <Breadcrumbs aria-label="breadcrumb" style={{margin:'30px'}}>
                 {props.ReduceCategory.map(ele=>{
                     return(
-                        <Link color="inherit" onClick={()=>props.active(ele.normalizedName)}>
+                        <Link color="inherit" style={{textDecoration:'none'}} onClick={()=>props.active(ele.normalizedName)}>
                         {ele.normalizedName}
                       </Link>
                     )
