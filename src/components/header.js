@@ -10,7 +10,7 @@ import { viewCart } from "../store/cart";
     // <div>
     <header style={{ backgroundColor: 'khaki', widows: 'initial', height: '75px' }}>
       <h2 style={{ color: 'black', textAlign: 'justify', marginLeft: '10px', marginBottom: '10px', padding: '20px' }}> OUR STORE
-      <Link color="inherit"style={{marginLeft:'1370px',textDecoration:'none'}} onClick={()=>{props.viewCart(!props.cart.view)}}>
+      <Link color="inherit"style={{position:"absolute", right:"20px",textDecoration:'none'}} onClick={()=>{props.viewCart(!props.cart.view)}}>
         CART ({props.cart.count})
       </Link>
       </h2>
