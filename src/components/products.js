@@ -22,7 +22,7 @@ const Products = (props) => {
        
           return (
             <div key={ele.name}>
-            <Card  sx={{ maxWidth: 345 }} style={{ marginLeft: '670px',display:'flex',flexDirection:'column' }}>
+            <Card  sx={{ maxWidth: 345 }} style={{ position:'relative', left:"650px",display:'flex',flexDirection:'column' }}>
               <CardMedia
                 component="img"
                 // height="140"
