@@ -9,13 +9,22 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import {stockCounter} from '../store/products';
+import {stockCounter, getProduct,actualGet} from '../store/products';
 import {addToCart} from '../store/cart'
-import { connect } from "react-redux";
+import { connect ,useDispatch} from "react-redux";
+import { useEffect } from 'react'
+
+
 
 
 const Products = (props) => {
   console.log(props.products,'>...............');
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    props.actualGet(dispatch(getProduct()))
+    console.log('inside use effect');
+  }, [props.products])
   return (
     <>
       {props.products.map(ele => {
@@ -66,5 +75,5 @@ const mapStateToProps = (state) => ({
   products: state.ReduceProducts.activeProduct,
   activeCategory: state.ReduceCategory.activeCategory
 })
-const mapDispatchToProps = {stockCounter,addToCart}
+const mapDispatchToProps = {stockCounter,addToCart,actualGet}
 export default connect(mapStateToProps,mapDispatchToProps)(Products);

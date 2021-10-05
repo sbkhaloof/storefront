@@ -1,3 +1,7 @@
+import axios from 'axios';
+
+const API= 'https://store-back-api.herokuapp.com/Products';
+
 /*
 State should be a list of all products
 Each product should have a category association, name, description, price, inventory count
@@ -60,6 +64,11 @@ const ReduceProducts = (state = initialState, action) => {
                 return product.category == payload ? product.category : null;
             })
             return state;
+
+        case 'GET-PRODUCT':
+            state.products=payload
+                return state;
+            
         case 'STOCKCOUNTER':
 
             state.activeProduct = state.activeProduct.map((product) => {
@@ -104,6 +113,24 @@ export const stockCounter = (name) => {
     return {
         type: 'STOCKCOUNTER',
         payload: name
+    }
+}
+
+// LAB 38
+
+export const getProduct=async(dispatch, state)=>{
+    const response =
+    await axios.get(API);
+
+const date = response.data;
+dispatch(actualGet(date));
+}
+
+
+export const actualGet=(data)=> {
+    return {
+        type: 'GET-PRODUCT',
+        payload: data
     }
 }
 
