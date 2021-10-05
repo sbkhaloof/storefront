@@ -12,7 +12,7 @@ const Categories = (props) => {
             <h2 style={{margin:'15px'}}>
                 Browse our Categories
             </h2>
-            <Breadcrumbs aria-label="breadcrumb" style={{margin:'30px'}}>
+            <Breadcrumbs aria-label="breadcrumb" style={{position:'absolute',left:'20px'}}>
                 {props.ReduceCategory.map(ele=>{
                     return(
                         <Link color="inherit" style={{textDecoration:'none'}} onClick={()=>props.active(ele.normalizedName)}>
